@@ -26,11 +26,17 @@ public class Program2 {
 			System.out.println(department);
 		}
 		
-		System.out.println("\n Test 3: department insert");
+		//System.out.println("\n Test 3: department insert");
 		
-		Department department = new Department(null, "Desenvolvedores");
-		departmentDao.insert(department);
-		System.out.println("Done! Rows affected " + department.getId());
+		//Department department = new Department(null, "Desenvolvedores");
+		//departmentDao.insert(department);
+		//System.out.println("Done! Row create: " + department.getId());
+		
+		System.out.println("\n Test 4: department update");
+		
+		Department department = new Department(null, "TI");
+		departmentDao.update(department);
+		System.out.println("Done! Row updated: " + department.getId());
 
 	}
 

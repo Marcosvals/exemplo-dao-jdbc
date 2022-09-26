@@ -25,6 +25,12 @@ public class Program2 {
 		for(Department department : list) {
 			System.out.println(department);
 		}
+		
+		System.out.println("\n Test 3: department insert");
+		
+		Department department = new Department(null, "Desenvolvedores");
+		departmentDao.insert(department);
+		System.out.println("Done! Rows affected " + department.getId());
 
 	}
 
